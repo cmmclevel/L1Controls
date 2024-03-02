@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif; /* Ensures a consistent font is used */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0; /* Removes default margin */
+  padding: 20px; /* Adds some padding around the content */
+}
+
+.flashcard {
+  width: 250px; /* Smaller width */
+  height: 350px; /* Smaller height */
+  perspective: 1000px;
+  margin-bottom: 20px; /* Space between flashcard and buttons */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px; /* Adjust padding */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px; /* Larger text */
+}
+
+.front img {
+  max-width: 100%;
+  max-height: 75%; /* Limits image size */
+}
+
+button {
+  padding: 10px 20px; /* Larger buttons */
+  font-size: 16px; /* Larger text on buttons */
+  margin: 0 10px; /* Space between buttons */
+  cursor: pointer;
+}
+
+/* Optional: Add styles for hover effects on buttons */
+button:hover {
+  background-color: #e0e0e0;
+}

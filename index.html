@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard Example</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="flashcards">
+  <div class="flashcard">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Authorized Access Control-1.webp" alt="Authorized Access Control">
+      </div>
+      <div class="back">
+        <h3>Authorized Access Control</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.1</p>
+        <p>Name/Description: Authorized Access Control</p>
+        <p>Detailed Description: Limit information system access to authorized users, processes, or devices.</p>
+      </div>
+    </div>
+  </div>
+  <!-- The second flashcard is initially hidden -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Authorized Access Control-2.webp" alt="Authorized Access Control 2">
+      </div>
+      <div class="back">
+        <h3>Authorized Access Control 2</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.2</p>
+        <p>Name/Description: Authorized Access Control Extended</p>
+        <p>Detailed Description: Extend information system access control to cover additional scenarios.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Transaction & Function Control-1.webp" alt="Transaction & Function Control">
+      </div>
+      <div class="back">
+        <h3>Transaction & Function Control</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.2</p>
+        <p>Name/Description: Transaction & Function Control</p>
+        <p>Detailed Description: Limit system access to the types of transactions and functions that authorized users are permitted to execute.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Transaction & Function Control-2.webp" alt="Transaction & Function Control 2">
+      </div>
+      <div class="back">
+        <h3>Transaction & Function Control 2</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.2</p>
+        <p>Name/Description: Transaction & Function Control Extended</p>
+        <p>Detailed Description: Extend system access control to cover additional transaction types and functions.</p>
+      </div>
+    </div>
+  </div>
+    <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="External Connections Control-1.webp" alt="External Connections Control">
+      </div>
+      <div class="back">
+        <h3>External Connections Control</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.20</p>
+        <p>Name/Description: External Connections Control</p>
+        <p>Detailed Description: Verify and control/limit connections to and use of external information systems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="External Connections Control-2.webp" alt="External Connections Control 2">
+      </div>
+      <div class="back">
+        <h3>External Connections Control 2</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.20</p>
+        <p>Name/Description: External Connections Control Extended</p>
+        <p>Detailed Description: Further verify and control/limit connections to and use of external information systems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Control Public Information-1.webp" alt="Control Public Information">
+      </div>
+      <div class="back">
+        <h3>Control Public Information</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.22</p>
+        <p>Name/Description: Control Public Information</p>
+        <p>Detailed Description: Control information posted or processed on publicly accessible information systems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Control Public Information-2.webp" alt="Control Public Information 2">
+      </div>
+      <div class="back">
+        <h3>Control Public Information 2</h3>
+        <p>Domain: Access Control (AC)</p>
+        <p>Code: AC.L1-3.1.22</p>
+        <p>Name/Description: Control Public Information Extended</p>
+        <p>Detailed Description: Further control information posted or processed on publicly accessible information systems.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Identification -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Identification-1.webp" alt="Identification">
+      </div>
+      <div class="back">
+        <h3>Identification</h3>
+        <p>Domain: Identification and Authentication (IA)</p>
+        <p>Code: IA.LT-3.5.1</p>
+        <p>Name/Description: Identification</p>
+        <p>Detailed Description: Identify information system users, processes acting on behalf, or devices.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Identification-2.webp" alt="Identification 2">
+      </div>
+      <div class="back">
+        <h3>Identification 2</h3>
+        <p>Domain: Identification and Authentication (IA)</p>
+        <p>Code: IA.LT-3.5.1</p>
+        <p>Name/Description: Identification Extended</p>
+        <p>Detailed Description: Further identify information system users, processes acting on behalf, or devices.</p>
+      </div>
+    </div>
+  </div>
+    <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Authentication-1.webp" alt="Authentication">
+      </div>
+      <div class="back">
+        <h3>Authentication</h3>
+        <p>Domain: Identification and Authentication (IA)</p>
+        <p>Code: IA.LT-3.5.2</p>
+        <p>Name/Description: Authentication</p>
+        <p>Detailed Description: Authenticate the identities of users, processes, or devices as a prerequisite to access.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Authentication-2.webp" alt="Authentication 2">
+      </div>
+      <div class="back">
+        <h3>Authentication 2</h3>
+        <p>Domain: Identification and Authentication (IA)</p>
+        <p>Code: IA.LT-3.5.2</p>
+        <p>Name/Description: Authentication Extended</p>
+        <p>Detailed Description: Further authenticate the identities of users, processes, or devices as a prerequisite to access.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Media Disposal -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Media Disposal-1.webp" alt="Media Disposal">
+      </div>
+      <div class="back">
+        <h3>Media Disposal</h3>
+        <p>Domain: Media Protection (MP)</p>
+        <p>Code: MP.L1-3.8.3</p>
+        <p>Name/Description: Media Disposal</p>
+        <p>Detailed Description: Sanitize or destroy information system media containing Federal Contract Information before disposal or reuse.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Media Disposal-2.webp" alt="Media Disposal 2">
+      </div>
+      <div class="back">
+        <h3>Media Disposal 2</h3>
+        <p>Domain: Media Protection (MP)</p>
+        <p>Code: MP.L1-3.8.3</p>
+        <p>Name/Description: Media Disposal Extended</p>
+        <p>Detailed Description: Further sanitize or destroy information system media containing Federal Contract Information before disposal or reuse.</p>
+      </div>
+    </div>
+  </div>
+    <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Limit Physical Access-1.webp" alt="Limit Physical Access">
+      </div>
+      <div class="back">
+        <h3>Limit Physical Access</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.1</p>
+        <p>Name/Description: Limit Physical Access</p>
+        <p>Detailed Description: Limit physical access to organizational information systems, equipment, and the respective operating environments to authorized individuals.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Limit Physical Access-2.webp" alt="Limit Physical Access 2">
+      </div>
+      <div class="back">
+        <h3>Limit Physical Access 2</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.1</p>
+        <p>Name/Description: Limit Physical Access Extended</p>
+        <p>Detailed Description: Further limit physical access to organizational information systems, equipment, and the respective operating environments to authorized individuals.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Escort Visitors -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Escort Visitors-1.webp" alt="Escort Visitors">
+      </div>
+      <div class="back">
+        <h3>Escort Visitors</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.3</p>
+        <p>Name/Description: Escort Visitors</p>
+        <p>Detailed Description: Escort visitors and monitor visitor activity.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Escort Visitors-2.webp" alt="Escort Visitors 2">
+      </div>
+      <div class="back">
+        <h3>Escort Visitors 2</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.3</p>
+        <p>Name/Description: Escort Visitors Extended</p>
+        <p>Detailed Description: Further escort visitors and monitor visitor activity.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Physical Access Logs -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Physical Access Logs-1.webp" alt="Physical Access Logs">
+      </div>
+      <div class="back">
+        <h3>Physical Access Logs</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.4</p>
+        <p>Name/Description: Physical Access Logs</p>
+        <p>Detailed Description: Maintain audit logs of physical access.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Physical Access Logs-2.webp" alt="Physical Access Logs 2">
+      </div>
+      <div class="back">
+        <h3>Physical Access Logs 2</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.4</p>
+        <p>Name/Description: Physical Access Logs Extended</p>
+        <p>Detailed Description: Further maintain audit logs of physical access.</p>
+      </div>
+    </div>
+  </div>
+    <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Manage Physical Access Devices-1.webp" alt="Manage Physical Access Devices">
+      </div>
+      <div class="back">
+        <h3>Manage Physical Access Devices</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.5</p>
+        <p>Name/Description: Manage Physical Access Devices</p>
+        <p>Detailed Description: Control and manage physical access devices.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Manage Physical Access Devices-2.webp" alt="Manage Physical Access Devices 2">
+      </div>
+      <div class="back">
+        <h3>Manage Physical Access Devices 2</h3>
+        <p>Domain: Physical Protection (PE)</p>
+        <p>Code: PEL1-3.10.5</p>
+        <p>Name/Description: Manage Physical Access Devices Extended</p>
+        <p>Detailed Description: Further control and manage physical access devices.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Flaw Remediation -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Flaw Remediation-1.webp" alt="Flaw Remediation">
+      </div>
+      <div class="back">
+        <h3>Flaw Remediation</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.1</p>
+        <p>Name/Description: Flaw Remediation</p>
+        <p>Detailed Description: Identify, report, and correct information and information system flaws in a timely manner.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Flaw Remediation-2.webp" alt="Flaw Remediation 2">
+      </div>
+      <div class="back">
+        <h3>Flaw Remediation 2</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.1</p>
+        <p>Name/Description: Flaw Remediation Extended</p>
+        <p>Detailed Description: Further identify, report, and correct information and information system flaws in a timely manner.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Malicious Code Protection -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Malicious Code Protection-1.webp" alt="Malicious Code Protection">
+      </div>
+      <div class="back">
+        <h3>Malicious Code Protection</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.2</p>
+        <p>Name/Description: Malicious Code Protection</p>
+        <p>Detailed Description: Provide protection from malicious code at appropriate locations within organizational information systems.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Malicious Code Protection-2.webp" alt="Malicious Code Protection 2">
+      </div>
+      <div class="back">
+        <h3>Malicious Code Protection 2</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.2</p>
+        <p>Name/Description: Malicious Code Protection Extended</p>
+        <p>Detailed Description: Further provide protection from malicious code at appropriate locations within organizational information systems.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Updated Flashcard for Update Malicious Code Protection -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Update Malicious Code Protection-1.webp" alt="Update Malicious Code Protection">
+      </div>
+      <div class="back">
+        <h3>Update Malicious Code Protection</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.4</p>
+        <p>Name/Description: Update Malicious Code Protection</p>
+        <p>Detailed Description: Update malicious code protection mechanisms when new releases are available.</p>
+      </div>
+    </div>
+  </div>
+    <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Update Malicious Code Protection-2.webp" alt="Update Malicious Code Protection 2">
+      </div>
+      <div class="back">
+        <h3>Update Malicious Code Protection 2</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.4</p>
+        <p>Name/Description: Update Malicious Code Protection</p>
+        <p>Detailed Description: Update malicious code protection mechanisms when new releases are available.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for System & File Scanning -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="System & File Scanning-1.webp" alt="System & File Scanning">
+      </div>
+      <div class="back">
+        <h3>System & File Scanning</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.5</p>
+        <p>Name/Description: System & File Scanning</p>
+        <p>Detailed Description: Perform periodic and real-time scans of the information system and files from external sources.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="System & File Scanning-2.webp" alt="System & File Scanning 2">
+      </div>
+      <div class="back">
+        <h3>System & File Scanning 2</h3>
+        <p>Domain: System and Information Integrity (SI)</p>
+        <p>Code: SI.L1-3.14.5</p>
+        <p>Name/Description: System & File Scanning Extended</p>
+        <p>Detailed Description: Further perform periodic and real-time scans of the information system and files from external sources.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Boundary Protection -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Boundary Protection-1.webp" alt="Boundary Protection">
+      </div>
+      <div class="back">
+        <h3>Boundary Protection</h3>
+        <p>Domain: System and Communications Protection (SC)</p>
+        <p>Code: SC.L1-3.13.1</p>
+        <p>Name/Description: Boundary Protection</p>
+        <p>Detailed Description: Monitor, control, and protect organizational communications at key boundaries.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Boundary Protection-2.webp" alt="Boundary Protection 2">
+      </div>
+      <div class="back">
+        <h3>Boundary Protection 2</h3>
+        <p>Domain: System and Communications Protection (SC)</p>
+        <p>Code: SC.L1-3.13.1</p>
+        <p>Name/Description: Boundary Protection Extended</p>
+        <p>Detailed Description: Further monitor, control, and protect organizational communications at key boundaries.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Flashcards for Public Access System Separation -->
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Public Access System Separation-1.webp" alt="Public Access System Separation">
+      </div>
+      <div class="back">
+        <h3>Public Access System Separation</h3>
+        <p>Domain: System and Communications Protection (SC)</p>
+        <p>Code: SC.L1-3.13.5</p>
+        <p>Name/Description: Public Access System Separation</p>
+        <p>Detailed Description: Implement subnetworks for publicly accessible system components, separated from internal networks.</p>
+      </div>
+    </div>
+  </div>
+  <div class="flashcard" style="display: none;">
+    <div class="card-inner">
+      <div class="front">
+        <img src="Public Access System Separation-2.webp" alt="Public Access System Separation 2">
+      </div>
+      <div class="back">
+        <h3>Public Access System Separation 2</h3>
+        <p>Domain: System and Communications Protection (SC)</p>
+        <p>Code: SC.L1-3.13.5</p>
+        <p>Name/Description: Public Access System Separation Extended</p>
+        <p>Detailed Description: Further implement subnetworks for publicly accessible system components, separated from internal networks.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+  
+</div>
+  
+</div>
+
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+
+<script src="script.js"></script>
+</body>
+</html>
